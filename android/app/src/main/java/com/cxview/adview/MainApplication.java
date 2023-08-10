@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.cxview.adview;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
