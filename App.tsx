@@ -2,6 +2,7 @@ import {memo, useCallback, useEffect, useState} from "react";
 import {Text, TextInput, TouchableOpacity, View} from "react-native";
 import {appFire, database} from './src/services/firebase'
 import { getDatabase, ref, set } from "firebase/database";
+import Routes from "./src/Routers";
 
 // Initialize Firebase
 const App = memo(function App() {
@@ -47,7 +48,7 @@ const App = memo(function App() {
       [state],
   );
 
-
+return <Routes />
   return <View>
 <TouchableOpacity onPress={onPress}>
     <Text>asd21</Text>
