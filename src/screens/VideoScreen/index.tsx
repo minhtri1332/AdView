@@ -12,7 +12,7 @@ const VideoScreen = memo(function VideoScreen() {
 
     return (
     <View style={{flex:1, backgroundColor: 'green'}}>
-      {urlVideo != ''?<Video source={{ uri: urlVideo }}   // Can be a URL or a local file.
+      {urlVideo != ''? <Video source={{ uri: urlVideo}}   // Can be a URL or a local file.
               autoplay={true}
               controls={false}
               disableFocus={true}
@@ -36,10 +36,5 @@ const styles = StyleSheet.create({
     bottom: 0,
     right: 0,
     backgroundColor:'black'
-  },
-  backgroundVideo1: {
-    height:300,
-    width:300,
-    backgroundColor:'black'
-  },
+  }
 });
