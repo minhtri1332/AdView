@@ -1,5 +1,6 @@
 import { memo } from "react";
 import Routes from "./src/Routers";
+import { Text, TouchableOpacity, View } from "react-native";
 
 // Initialize Firebase
 const App = memo(function App() {
@@ -38,13 +39,10 @@ const App = memo(function App() {
   //     [state],
   // );
 
-return <Routes />
-//   return <View>
-// <TouchableOpacity onPress={onPress}>
-//     <Text>asd21</Text>
-// <TextInput onChangeText={(e) => setState(e)} placeholder={'okasdo'}/>
-// </TouchableOpacity>
-//   </View>
+// return <Routes />
+  return <TouchableOpacity onPress={()=>{}} style={{flex:1, backgroundColor: 'pink'}}>
+    <Text>asd21</Text>
+</TouchableOpacity>
 })
 
 export default App
